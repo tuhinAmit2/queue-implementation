@@ -23,5 +23,21 @@ public class Main {
             queue.display();
         }
 
+        PriorityQueue priorityQueue = new PriorityQueue();
+        priorityQueue.enqueue(10,2);
+        priorityQueue.display();
+        priorityQueue.enqueue(20,1);
+        priorityQueue.display();
+        priorityQueue.enqueue(30,3);
+        priorityQueue.display();
+        priorityQueue.display();
+
+        System.out.println("Dequeued: " + priorityQueue.dequeue());
+        System.out.println("Front element: " + priorityQueue.peek());
+        System.out.println("Queue size: " + priorityQueue.size());
+        if(!priorityQueue.isEmpty()){
+            priorityQueue.display();
+        }
+
     }
 }
